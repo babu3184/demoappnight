@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="table">
+   <tr *ngFor="let user of allUsers">
+       <td>{{user.fname}}</td>
+       <td>{{user.lname}}</td>
+       <td>{{user.email}}</td>
+       <td>{{user.number}}</td>
+       <td>{{user.age}}</td>
+       <td>{{user.address}}</td>
+       <td>{{user.haddres1}}</td>
+       <td>{{user.haddres2}}</td>
+       <td>{{user.caddres1}}</td>
+       <td>{{user.caddres2}}</td>
+       <td>{{user.subscribe}}</td>
+       
+
+       <td>
+           <a class="btn" (click)="update(user)">Update</a>
+       </td>
+       <td>
+           <a class="btn text-danger" (click)="deleteUser(user.id)">Delete</a>
+       </td>
+       <td>
+          
+       </td>
+   </tr>
+</div>
+</div>
